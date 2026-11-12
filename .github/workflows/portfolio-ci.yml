@@ -1,0 +1,35 @@
+name: Portfolio static smoke test
+on:
+  push:
+    paths:
+      - 'portfolio-v2/**'
+      - '.github/workflows/portfolio-ci.yml'
+  pull_request:
+    paths:
+      - 'portfolio-v2/**'
+permissions:
+  contents: read
+jobs:
+  validate-portfolio:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check static site, JavaScript syntax and project index
+        run: |
+          node - <<'NODE'
+          const fs = require('node:fs');
+          const assert = require('node:assert/strict');
+          const vm = require('node:vm');
+          const path = 'portfolio-v2/index.html';
+          const html = fs.readFileSync(path, 'utf8');
+          const script = html.match(/<script\b[^>]*>([\s\S]*?)<\/script>/i);
+          assert.ok(script, 'Expected an inline site script');
+          new vm.Script(script[1], { filename: 'portfolio-inline.js' });
+          const projects = [...script[1].matchAll(/\{slug:'([^']+)'/g)].map(x => x[1]);
+          assert.equal(projects.length, 12, 'Expected 12 project case studies');
+          assert.equal(new Set(projects).size, projects.length, 'Project slugs must be unique');
+          assert.ok(html.includes('name="viewport"'), 'Responsive viewport missing');
+          assert.ok(fs.existsSync('portfolio-v2/vercel.json'), 'Vercel config missing');
+          assert.ok(fs.existsSync('portfolio-v2/favicon.svg'), 'Favicon missing');
+          console.log('PASS: portfolio HTML, JS syntax, unique projects and deploy files.');
+          NODE
