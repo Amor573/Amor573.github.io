@@ -1,0 +1,74 @@
+[
+  {
+    "id": "O1",
+    "file": "openshift/logging-scheduling-failure.png",
+    "title": "Logging: scheduling failure",
+    "project": "OpenShift training lab",
+    "caption": "Scheduler events show unbound storage, insufficient CPU/memory and control-plane taints. Diagnostic evidence, not a resolved state.",
+    "edited_sha256": "a197b3767882eee7b1a2698f52bcf2f05ac98dec3dba4e9a6598f7e94d4e998d"
+  },
+  {
+    "id": "O2",
+    "file": "openshift/logging-pods-running.png",
+    "title": "Logging: pods running",
+    "project": "OpenShift training lab",
+    "caption": "A later capture shows the listed logging pods Ready and Running after an ingester pod deletion. It does not prove log ingestion, retention or alert delivery.",
+    "edited_sha256": "6a267a2156d8d6aea656868205fd23f4529549c8837c4d60086d52d093189fef"
+  },
+  {
+    "id": "O3",
+    "file": "openshift/velero-restore-completed.png",
+    "title": "Velero restore result",
+    "project": "OpenShift training lab",
+    "caption": "manual-restore reports Completed, 0 errors and 1 warning. Application data integrity and the warning cause are not established by this capture.",
+    "edited_sha256": "f23abd62cf7ecac0773b74c4062faecf96031106089ff986498e977539159ca7"
+  },
+  {
+    "id": "W1",
+    "file": "mindnan/product-interface.png",
+    "title": "MINDNAN product interface",
+    "project": "MINDNAN",
+    "caption": "Historical public-facing homepage capture. Shows the interface and intended booking journey; does not verify payments, therapist credentials, bookings or current service health.",
+    "edited_sha256": "84da70143aec7e3e66a83b994d62e6cdb487af289cb90db5da364474432d184c"
+  },
+  {
+    "id": "W2",
+    "file": "mindnan/cloud-run-revision.png",
+    "title": "Cloud Run revision completed",
+    "project": "MINDNAN",
+    "caption": "Service update, revision creation and traffic routing are marked Completed; the latest revision receives 100% traffic. Earlier failed revisions remain visible. This is deployment-state evidence, not end-to-end application testing.",
+    "edited_sha256": "2382b9ca002dc5eb346bd1c520be52afd948b35194032c8b4fa4aa9ce3337613"
+  },
+  {
+    "id": "W3",
+    "file": "mindnan/vercel-ready.png",
+    "title": "Vercel frontend Ready",
+    "project": "MINDNAN",
+    "caption": "Historical Vercel frontend deployment shows Ready and source revision a21bb7d. This is not a new deployment of this portfolio or evidence of current availability.",
+    "edited_sha256": "13498ca7c7fb4adce7298ddd21c9629adf717f848b07fce72daee294592013bb"
+  },
+  {
+    "id": "A1",
+    "file": "azure/virtual-machine-running.png",
+    "title": "Azure VM deployment",
+    "project": "Azure VM lab",
+    "caption": "AmorVM is shown Running with Deployment succeeded. Account, subscription identifier, public IP and billing details are removed. This is a VM deployment, not proof of AKS or Terraform execution.",
+    "edited_sha256": "68f2004f9e47afa2b2b5842bd6fb881686d9be3e1d3b19dc2342597892481aaa"
+  },
+  {
+    "id": "V1",
+    "file": "vmware/virtual-switch-topology.png",
+    "title": "ESXi network topology",
+    "project": "VMware lab",
+    "caption": "Two port groups and one uplink are visible. The no-uplink-redundancy warning is preserved. This documents topology inspection, not high availability or a completed VPN migration.",
+    "edited_sha256": "5c23c903ca852146d591e721cf9ae5d842466dcce3918135aa8504de82e92399"
+  },
+  {
+    "id": "V2",
+    "file": "infrastructure/borg-archive-result.png",
+    "title": "Borg backup archive result",
+    "project": "Infrastructure backup lab",
+    "caption": "Borg reports 81,286 files, 20.14 GB original, 10.45 GB compressed and 9.99 GB deduplicated for an archive. This shows archive creation; a successful restore has not been demonstrated.",
+    "edited_sha256": "3833761c7cf511ca6de67e3f75871aacf857467ec31eda0a433ac393e180914f"
+  }
+]
