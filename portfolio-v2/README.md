@@ -1,6 +1,6 @@
 # Muhammed Akintola — Portfolio V2
 
-The portfolio is a static single-page website with dynamic case studies and category filters. All content is in `index.html`. No dependencies or backend services are required.
+The portfolio is a static single-page website with dynamic case studies and category filters. The main page is `index.html`; the curated screenshot gallery and assets are in `evidence/`. No dependencies or backend services are required.
 
 ## Deploy on Vercel
 
@@ -17,3 +17,8 @@ The legacy GitHub Pages homepage at repository root is unchanged. This directory
 - Reference, private experience, ongoing labs and runbooks are labeled.
 - Do not add screenshots with IP addresses, credentials, production customer data or session information.
 - The site uses a professional contact link without exposing personal emails.
+
+
+## Visual evidence
+
+[Review nine selected historical captures](evidence/). Captions distinguish observed states from unverified outcomes. See [EVIDENCE.md](EVIDENCE.md) and [DEPLOYMENT.md](DEPLOYMENT.md) for remaining proof and authorization gaps.

@@ -22,9 +22,11 @@ Your existing root `index.html` is preserved, so importing the repository's root
 
 The Vercel integration is an **account authorization step**, so GitHub commits alone cannot assert that the site is deployed.
 
-## Known content limitation
+## Current evidence and deployment status — 12 November 2026
 
-The user's local Windows `Screenshots` folder has not been shared or mounted in this chat. No files from it have been selected, reviewed, redacted or uploaded to GitHub. Do not replace these proof requirements with stock imagery. When the folder is uploaded or otherwise accessible, select real technical screenshots, remove private information and add clear alt text.
+Nine curated screenshots are published in `evidence/`, with exact crops, solid redactions, captions and explicit limits. Two IBM shared-session candidates remain local and are not published. No AWS/EKS execution, AKS apply, completed VPN migration or cargo/data screenshot was selected.
+
+The Vercel connector is available but not installed/authorized in this session. No Vercel deployment status was returned for the portfolio commit. A new Vercel deployment and live verification have not been performed. Connect Vercel with access to this repository, then import it with Root Directory `portfolio-v2`.
 
 ## Security and operational rules
 

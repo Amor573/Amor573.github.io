@@ -18,3 +18,15 @@ These URLs identify independently checkable **GitHub Actions jobs** that ran for
 - **Product:** synthetic cargo reconciliation dashboard and decision-impact explanation.
 
 **Do not upload raw images from personal devices, client systems or clinical/financial records without verifying they contain no confidential information.**
+
+## Curated visual evidence — 12 November 2026
+
+[Open the gallery](evidence/) and [asset manifest](evidence/manifest.json).
+
+- OpenShift: scheduling failures, later Running logging pods, and a Completed Velero restore with one warning.
+- MINDNAN: historical product interface, completed Cloud Run revision and Vercel Ready frontend.
+- Azure: VM deployment only; not AKS or Terraform execution.
+- VMware: switch topology inspection with the redundancy warning retained.
+- Infrastructure backup: Borg archive result; no successful restore established.
+
+All nine images use exact crops and, where needed, solid black redactions. Errors and warnings remain visible. They do not establish current uptime, production readiness, personal authorship or execution of a specific repository revision. IBM client-session images were withheld; no raw screenshot collection was uploaded. Original filenames and private review records are excluded from this public manifest.
