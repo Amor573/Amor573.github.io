@@ -25,11 +25,11 @@
   },
   {
     "id": "W1",
-    "file": "mindnan/product-interface.png",
-    "title": "MINDNAN product interface",
+    "file": "mindnan/current-homepage.jpg",
+    "title": "MINDNAN current homepage",
     "project": "MINDNAN",
-    "caption": "Historical public-facing homepage capture. Shows the interface and intended booking journey; does not verify payments, therapist credentials, bookings or current service health.",
-    "edited_sha256": "84da70143aec7e3e66a83b994d62e6cdb487af289cb90db5da364474432d184c"
+    "caption": "Public homepage captured 12 November 2026. Illustrative profile, payment and session graphics are not transaction evidence. Therapist profiles showed a slow-loading notice; booking and payment were not tested.",
+    "edited_sha256": "59bd64f3bd9c456fdab2ddb62092bf53749db2f80823c774ccd153924c283772"
   },
   {
     "id": "W2",
