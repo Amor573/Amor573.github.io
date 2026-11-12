@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#090d12">
+<meta name="description" content="Muhammed Akintola — engineer across web development, cloud, DevOps, networking and enterprise infrastructure. Eight years building and running systems.">
+<meta property="og:title" content="Muhammed Akintola | I build the product. And everything it runs on.">
+<meta property="og:description" content="Web development, cloud, DevOps, networking and enterprise infrastructure, connected by real engineering work.">
+<title>Muhammed Akintola — Systems, shipped.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{color-scheme:dark;--bg:#090d12;--panel:#101821;--panel2:#131d25;--line:#28343c;--text:#f0f4ef;--muted:#a4b4bc;--dim:#778b96;--accent:#c5fa72;--soft:#202d24;--cyan:#87dacf}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;line-height:1.55;overflow-x:hidden}
+body:before{content:"";z-index:-1;position:fixed;inset:0;opacity:.13;pointer-events:none;background-image:linear-gradient(to right,#38505b 1px,transparent 1px),linear-gradient(to bottom,#38505b 1px,transparent 1px);background-size:75px 75px;mask-image:linear-gradient(110deg,transparent 10%,#000 100%)}
+a{color:inherit;text-decoration:none}button{font:inherit}a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:4px}
+.wrapper{width:min(1192px,calc(100% - 72px));margin-inline:auto}
+.mono,.micro,.index,.tag,.eyebrow,.topbar,.status{font-family:'DM Mono',monospace}
+.micro,.index,.eyebrow{font-size:11px;letter-spacing:.12em}
+.topbar{height:83px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #20303a;position:relative;z-index:2}
+.brand{display:flex;align-items:center;gap:14px;font-weight:700}
+.logo{display:grid;place-items:center;background:var(--accent);color:#111b14;font-size:24px;border-radius:6px;width:53px;height:53px;font-family:'Space Grotesk',sans-serif;letter-spacing:-.06em}
+.logo span{color:#4c6f26}
+.brand-line{font:10px 'DM Mono',monospace;color:var(--muted);letter-spacing:.1em}
+nav{display:flex;gap:29px;font-size:13px;color:#c6d2d4}
+nav a:hover,.links a:hover{color:var(--accent)}
+.nav-link{font-size:12px;color:var(--accent);border:1px solid #4c6a4d;border-radius:4px;padding:12px 16px}
+.hero{min-height:610px;padding-top:92px;display:grid;grid-template-columns:1.07fr .93fr;gap:24px;align-items:center;position:relative}
+.eyebrow{color:var(--accent);display:flex;align-items:center;gap:14px;font-weight:500}
+.dot{width:8px;height:8px;background:var(--accent);border-radius:50%;box-shadow:0 0 0 6px #c5fa7214}
+h1,h2,h3,p{margin-top:0}
+h1,h2,h3{font-family:'Space Grotesk',sans-serif;letter-spacing:-.045em}
+h1{font-size:clamp(52px,5.7vw,85px);line-height:1.075;letter-spacing:-.075em;margin:24px 0 22px}
+h1 em,.heading em{font-style:normal;color:var(--accent)}
+.hero p{font-size:16px;line-height:1.75;max-width:570px;color:var(--muted)}
+.actions{display:flex;gap:11px;flex-wrap:wrap;margin:33px 0 58px}
+.btn{display:inline-flex;gap:22px;align-items:center;justify-content:center;min-height:46px;padding:12px 18px;border-radius:3px;font-weight:700;font-size:12px;transition:transform .2s ease,border-color .2s ease}
+.btn:hover{transform:translateY(-2px)}
+.primary{background:var(--accent);color:#0e1713}
+.secondary{border:1px solid #475861;color:#e4ecec}
+.metrics{display:flex;gap:35px;border-top:1px solid #26323b;padding-top:26px}
+.metrics strong{display:block;font-size:32px;font-family:'Space Grotesk',sans-serif;line-height:1.1}
+.metrics small{color:var(--dim);font:10px 'DM Mono',monospace;letter-spacing:.1em}
+.orbit{width:min(100%,536px);aspect-ratio:1;margin:auto;position:relative;display:grid;place-items:center}
+.orbit:before,.orbit:after{content:"";position:absolute;border:1px dashed #426058;border-radius:50%;width:85%;aspect-ratio:1;opacity:.6}
+.orbit:after{width:60%;border-color:#426356;transform:rotate(25deg)}
+.orbit svg{width:100%;height:100%;overflow:visible}
+.orbit-label{position:absolute;bottom:0;left:3%;font:10px 'DM Mono',monospace;letter-spacing:.12em;color:var(--dim)}
+.ticker{border-block:1px solid #27343a;background:#0c1518;padding:19px 0;color:#bac9cb;white-space:nowrap;overflow:hidden;font:12px 'DM Mono',monospace;letter-spacing:.12em}
+.ticker span{display:inline-block;padding-right:26px}
+.ticker b{padding:0 16px;color:var(--accent)}
+.section{padding:102px 0}
+.section-head{display:flex;justify-content:space-between;align-items:end;gap:35px;margin-bottom:36px}
+.index{color:var(--accent)}
+.heading{font-size:clamp(34px,4vw,56px);line-height:1.11;margin:13px 0 0}
+.section-head p{max-width:390px;font-size:14px;color:var(--muted);margin-bottom:0}
+.filters{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:24px}
+.filter{cursor:pointer;background:#10181d;border:1px solid #314049;border-radius:3px;padding:10px 15px;color:#afbdc1;font:11px 'DM Mono',monospace}
+.filter[aria-pressed=true]{background:var(--accent);color:#112018;border-color:var(--accent)}
+.projects{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px}
+.project{position:relative;display:flex;flex-direction:column;min-height:310px;padding:23px;background:#121b23;border:1px solid #2b3941;transition:transform .2s ease,border-color .2s ease,background .2s}
+.project:hover{transform:translateY(-4px);border-color:#719064;background:#162129}
+.phead{display:flex;justify-content:space-between;align-items:flex-start;gap:16px}
+.micro{color:var(--dim)}
+.glyph{font-size:29px;color:var(--accent)}
+.project h3{font-size:22px;line-height:1.2;margin:44px 0 11px}
+.project p{font-size:13px;color:var(--muted);line-height:1.65;flex:1}
+.tags{display:flex;gap:6px;flex-wrap:wrap}
+.tag{font-size:10px;border:1px solid #32434a;color:#c5d4d4;padding:5px 7px}
+.pfooter{display:flex;justify-content:space-between;gap:12px;align-items:center;border-top:1px solid #27363e;padding-top:17px;margin-top:20px}
+.status{font-size:10px;color:#a9babc}
+.status:before{content:"";width:6px;height:6px;display:inline-block;border-radius:50%;background:var(--cyan);margin-right:9px}
+.status.private:before{background:#e0ba8c}
+.status.design:before{background:#8baadf}
+.arrow{color:var(--accent);font-size:24px;line-height:1}
+.subnote{display:flex;justify-content:space-between;gap:20px;color:var(--dim);font:10px 'DM Mono',monospace;margin-top:25px}
+.skills-back{background:#0e171d;border-block:1px solid #27353d}
+.skills{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.skill{padding:25px 23px;border:1px solid #314049;min-height:170px;display:flex;flex-direction:column}
+.skill .micro{color:var(--accent)}
+.skill h3{font-size:19px;margin:24px 0 10px}
+.skill p{font-size:13px;line-height:1.6;color:var(--muted);margin:0}
+.philosophy{display:grid;grid-template-columns:1fr 1fr;gap:75px}
+.philosophy p{font-size:16px;line-height:1.8;color:#bac8ca}
+.rules{display:grid;gap:9px;margin-top:25px;font:11px 'DM Mono',monospace;color:var(--accent)}
+.contact{background:var(--accent);color:#0b1a11;padding:75px 0}
+.contact-inner{display:flex;align-items:end;justify-content:space-between;gap:32px}
+.contact h2{font-size:clamp(40px,5vw,70px);line-height:1.05;margin:12px 0 19px}
+.contact p{max-width:510px;font-size:15px;line-height:1.65}
+.contact .primary{background:#0a1711;color:#e9f6e3;white-space:nowrap}
+footer{display:flex;gap:20px;align-items:center;justify-content:space-between;padding-block:25px!important;color:#8ca0a6;font:11px 'DM Mono',monospace}
+.links{display:flex;gap:16px}
+.case{padding:74px 0 100px;max-width:950px}
+.back{color:var(--accent);font:12px 'DM Mono',monospace;display:inline-block;margin-bottom:30px}
+.case h1{font-size:clamp(42px,6vw,74px);margin:13px 0 22px}
+.case-summary{font-size:19px;line-height:1.6;color:var(--muted);max-width:850px}
+.case-meta{display:flex;align-items:center;gap:18px;flex-wrap:wrap;padding:17px 0 30px;border-bottom:1px solid var(--line)}
+.case-cols{display:grid;grid-template-columns:1.3fr .7fr;gap:48px;margin-top:48px}
+.case-section{padding-bottom:34px;margin-bottom:34px;border-bottom:1px solid var(--line)}
+.case-section .micro{color:var(--accent)}
+.case-section h2{font-size:28px;margin:14px 0}
+.case-section p{color:#b9c9cd;line-height:1.8}
+.case-step{display:flex;align-items:baseline;gap:17px;padding:13px 0;border-top:1px solid #293b43}
+.case-step span{color:var(--accent);font:11px 'DM Mono',monospace}
+.case-step p{margin:0;line-height:1.5}
+.proof{background:#142128;border:1px solid #364853;padding:24px;position:sticky;top:32px;align-self:start}
+.proof h3{font-size:25px;line-height:1.15;margin:22px 0 14px}
+.proof p{font-size:13px;line-height:1.8;color:#bac9c9}
+.proof .btn{margin-top:14px}
+#case-view[hidden],#home-view[hidden]{display:none}
+@media(max-width:980px){.hero{grid-template-columns:1fr;padding-top:64px}.orbit{max-width:430px}.projects,.skills{grid-template-columns:repeat(2,minmax(0,1fr))}.hero h1{max-width:770px}}
+@media(max-width:670px){.wrapper{width:min(100% - 34px,1192px)}.topbar{height:75px}.brand-line,nav,.nav-link{display:none}.hero{padding-top:65px;min-height:auto;padding-bottom:70px}.hero h1{font-size:clamp(47px,11vw,68px)}.hero p{font-size:14px}.orbit{width:100%;max-width:350px}.metrics{gap:20px}.metrics strong{font-size:26px}.metrics small{font-size:9px}.section{padding:70px 0}.section-head{display:block}.section-head p{margin-top:18px}.projects,.skills,.case-cols,.philosophy{grid-template-columns:1fr}.project{min-height:285px}.project h3{margin-top:30px}.contact-inner{display:block}.contact .btn{margin-top:12px}.case{padding:55px 0}.case-summary{font-size:16px}.proof{position:static}.subnote{display:block}.subnote span{display:block;margin-bottom:8px}footer{display:block}footer .links{margin-top:15px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.project,.btn{transition:none}}
+</style>
+</head>
+<body>
+<header class="topbar wrapper">
+<a class="brand" href="./" aria-label="Muhammed Akintola home"><span class="logo">MA<span>.</span></span><span class="brand-line">SYSTEMS / SHIPPED<br>MUHAMMED AKINTOLA</span></a>
+<nav aria-label="Main navigation"><a href="./#work">Projects</a><a href="./#skills">Expertise</a><a href="./#approach">Approach</a><a href="./#contact">Contact</a></nav>
+<a class="nav-link" href="https://www.linkedin.com/in/muhammed-akintola-a938612a6" target="_blank" rel="noopener noreferrer">LET'S CONNECT ↗</a>
+</header>
+<main id="home-view">
+<section class="hero wrapper">
+<div>
+<div class="eyebrow"><span class="dot"></span> FULL-STACK SYSTEMS THINKING</div>
+<h1>I build the <em>product.</em><br>And everything<br>it <em>runs on.</em></h1>
+<p>From usable web experiences to automated cloud platforms, secure network paths and the operational discipline that keeps services running. I work across the stack because real problems rarely stay in one layer.</p>
+<div class="actions"><a class="btn primary" href="#work">Explore the work <span>↗</span></a><a class="btn secondary" href="#contact">Start a conversation <span>↗</span></a></div>
+<div class="metrics"><div><strong>08</strong><small>YEARS IN IT</small></div><div><strong>12</strong><small>PROJECT STORIES</small></div><div><strong>BUILD → RUN</strong><small>END-TO-END MINDSET</small></div></div>
+</div>
+<div class="orbit" aria-label="Connected web, CI/CD, cloud and infrastructure layers">
+<svg viewBox="0 0 540 540" role="img" aria-label="Engineering layers connected to building and operating software">
+<g stroke="#3b5557" fill="none" stroke-width="1"><circle cx="270" cy="265" r="183" stroke-dasharray="5 8"/><path d="M270 62 L462 163 L462 363 L270 465 L78 363 L78 163 Z" stroke-dasharray="5 7"/><path d="M270 62V465M78 163L462 363M462 163L78 363" stroke-dasharray="5 8"/></g>
+<circle cx="270" cy="265" r="106" fill="#18252b" stroke="#657a5a"/><circle cx="270" cy="265" r="72" fill="#c5fa72"/>
+<text x="270" y="260" text-anchor="middle" fill="#182113" font-size="28" font-family="Space Grotesk,sans-serif" font-weight="700">BUILD</text><text x="270" y="287" text-anchor="middle" fill="#273c25" font-size="14" font-family="DM Mono,monospace">→ OPERATE</text>
+<g font-family="DM Mono,monospace" font-size="13" text-anchor="middle"><g fill="#19272a" stroke="#61755e"><rect x="210" y="33" width="120" height="55" rx="5"/><rect x="385" y="139" width="135" height="55" rx="5"/><rect x="383" y="343" width="138" height="55" rx="5"/><rect x="205" y="445" width="130" height="55" rx="5"/><rect x="22" y="343" width="144" height="55" rx="5"/><rect x="24" y="139" width="142" height="55" rx="5"/></g>
+<g fill="#c5fa72"><text x="270" y="66">01 / WEB</text><text x="452" y="171">02 / CI·CD</text><text x="452" y="375">03 / CLOUD</text><text x="270" y="477">04 / NETWORK</text><text x="94" y="375">05 / OBSERVE</text><text x="95" y="171">06 / SYSTEMS</text></g></g>
+<g fill="#c5fa72"><circle cx="270" cy="117" r="4"/><circle cx="405" cy="195" r="4"/><circle cx="405" cy="334" r="4"/><circle cx="270" cy="417" r="4"/><circle cx="135" cy="334" r="4"/><circle cx="135" cy="195" r="4"/></g>
+</svg><span class="orbit-label">FIG 01. / SYSTEMS ARE CONNECTED</span></div>
+</section>
+<div class="ticker"><div class="wrapper"><span>WEB ENGINEERING <b>✳</b> CLOUD & KUBERNETES <b>✳</b> DEVOPS <b>✳</b> NETWORKING <b>✳</b> ENTERPRISE SYSTEMS <b>✳</b> PRODUCT OPERATIONS</span></div></div>
+<section class="section wrapper" id="work">
+<div class="section-head"><div><span class="index">01 / SELECTED WORK</span><h2 class="heading">Built. Deployed.<br><em>Diagnosed.</em></h2></div><p>Public repositories, hands-on labs, applied infrastructure work and private case studies, with evidence levels stated clearly.</p></div>
+<div id="filters" class="filters" aria-label="Project filters"></div>
+<div id="projects" class="projects" aria-live="polite"></div>
+<div class="subnote"><span>PROJECT STATUS IS IDENTIFIED ON EACH CARD</span><span id="count">12 PROJECTS</span></div>
+</section>
+<section class="section skills-back" id="skills"><div class="wrapper">
+<div class="section-head"><div><span class="index">02 / PRACTICE AREAS</span><h2 class="heading">One engineer.<br><em>Multiple layers.</em></h2></div><p>Software, deployment, security, networks and enterprise infrastructure have to work as one system.</p></div>
+<div class="skills" id="skill-cards"></div></div></section>
+<section class="section wrapper philosophy" id="approach"><div><span class="index">03 / THE APPROACH</span><h2 class="heading">“It works” is<br><em>where it begins.</em></h2></div><div><p>A web app only becomes useful when it deploys reliably. A cluster only matters when workloads work. A network is only secure when connectivity, control and recovery are understood together.</p><p>I connect development to operations and use evidence, diagnostics and repeatability to make decisions.</p><div class="rules"><span>01 / VALIDATE ASSUMPTIONS</span><span>02 / DESIGN FOR FAILURE</span><span>03 / AUTOMATE REPETITION</span><span>04 / DOCUMENT THE HANDOVER</span></div></div></section>
+<section class="contact" id="contact"><div class="wrapper contact-inner"><div><span class="micro">04 / START A CONVERSATION</span><h2>Have a system<br>that needs owning?</h2><p>Cloud platforms, web engineering, delivery automation, networking, observability, migrations or production troubleshooting.</p></div><a class="btn primary" href="https://www.linkedin.com/in/muhammed-akintola-a938612a6" target="_blank" rel="noopener noreferrer">Connect on LinkedIn ↗</a></div></section>
+</main>
+<main id="case-view" class="wrapper case" hidden></main>
+<footer class="wrapper"><span>© <span id="year"></span> MUHAMMED AKINTOLA · LAGOS / GLOBAL</span><span class="links"><a href="https://github.com/Amor573" target="_blank" rel="noopener noreferrer">GITHUB ↗</a><a href="https://www.linkedin.com/in/muhammed-akintola-a938612a6" target="_blank" rel="noopener noreferrer">LINKEDIN ↗</a></span></footer>
+<script>
+(function(){
+'use strict';
+var projects=[
+{slug:'toju-resto',title:'Toju Resto',cat:'Web',badge:'Public source',icon:'⌘',tags:['Django','Python','Docker'],summary:'Restaurant commerce application featuring cart, ordering and payment-related modules, with Docker delivery assets.',challenge:'Deliver more than a static page: a working application structure with transactional flows and deployable components.',approach:'Django application modules for the ordering workflow, cart and payment-related paths, plus container/deployment files.',result:'Inspectable full-stack application code that connects product and operational design.',evidence:'The public repository includes Django files, Dockerfile and Compose configuration. Production payment workflows have not been independently verified.',url:'https://github.com/Amor573/tojuresto',architecture:['Django application and views','Cart, payment-related modules and persistence','Docker and Compose configuration','Deployment and ongoing verification']},
+{slug:'eks-cicd',title:'AWS EKS delivery platform',cat:'Cloud',badge:'Private experience',icon:'⎔',tags:['AWS EKS','GitHub Actions','Helm'],summary:'EKS delivery architecture with automated releases, Kubernetes scaling and ALB / Route 53 traffic routing.',challenge:'Reduce repetitive deployment work and make release paths easier to manage.',approach:'GitHub Actions orchestration, containerized workloads, Helm deployment, Amazon EKS networking and autoscaling.',result:'Automated release flow; a 90% reduction in deployment effort is a self-reported estimate awaiting documentation.',evidence:'Private hands-on experience. This is not represented as a publicly hosted GitHub project.',url:'',architecture:['GitHub Actions pipeline','Image build and Helm release','Amazon EKS deployment','ALB, Route 53 and autoscaling']},
+{slug:'ansible-flask',title:'Flask × NGINX automation',cat:'DevOps',badge:'Public lab',icon:'⇄',tags:['Ansible','Docker Compose','NGINX'],summary:'Automation lab combining Ansible roles, five Flask containers and an NGINX reverse-proxy tier.',challenge:'Make application-host provisioning and proxy setup more repeatable.',approach:'Used Ansible host targeting and reusable roles alongside Docker Compose services.',result:'Inspectable deployment automation and service topology, with room for production hardening.',evidence:'The repository has not been independently revalidated end-to-end; health checks and load distribution are pending.',url:'https://github.com/Amor573/ansible_flask_vm_deploy',architecture:['Ansible roles and inventory','Docker Compose app network','Five Flask application containers','NGINX reverse proxy']},
+{slug:'azure-aks',title:'AKS with Terraform',cat:'Cloud',badge:'Reference code',icon:'△',tags:['Azure AKS','Terraform','Datadog'],summary:'Modular Azure Kubernetes Service provisioning and monitoring integration defined as code.',challenge:'Make Azure cluster configuration reviewable, maintainable and repeatable.',approach:'Terraform modules define AKS resources and a Helm-based Datadog integration.',result:'A code-level platform architecture reference.',evidence:'The repository explicitly notes that a successful live cluster deployment has not been independently confirmed.',url:'https://github.com/Amor573/Terraform-Aks',architecture:['Azure resource group','Terraform AKS cluster module','Kubernetes and Helm providers','Datadog monitoring release']},
+{slug:'openshift',title:'OpenShift platform engineering',cat:'Cloud',badge:'Hands-on lab',icon:'⬡',tags:['OpenShift','ODF','OADP'],summary:'Home-lab work across OpenShift networking, storage, identity, backup/recovery and platform troubleshooting.',challenge:'Operate more of the Kubernetes platform lifecycle, beyond application deployment.',approach:'Worked through installation and networking diagnostics; configured practice tasks covering quotas, ODF, OADP, routes, identity and logging.',result:'Operational practice across several critical OpenShift administration domains.',evidence:'Lab evidence is still being sanitized and documented. Installation and LDAP troubleshooting are not portrayed as fully resolved.',url:'https://github.com/Amor573/openshift-platform-engineering-lab',architecture:['OpenShift control plane and node networking','ODF file, block and object storage','OADP backup and restore','Identity, routing and observability']},
+{slug:'vpn-ikev2',title:'Site-to-site VPN modernization',cat:'Network',badge:'Design / runbook',icon:'↗',tags:['IKEv2','IPsec','Cisco IOS'],summary:'Change planning for an existing VPN tunnel migration from IKEv1 to IKEv2, with cutover impact and rollback.',challenge:'Introduce improved tunnel protection while preserving a safe, reversible change process.',approach:'Reviewed IKE/IPsec policies, transforms, keyrings, profiles, PFS and GRE/IPsec versus VTI design options.',result:'A change-ready operational procedure including expected service downtime and validation checkpoints.',evidence:'This is runbook and design work, not a claim that the production migration has already been completed.',url:'',architecture:['Existing tunnel and peer configuration','IKEv2 policy, keyring and profile','IPsec profile and PFS requirements','Validation and rollback']},
+{slug:'monitoring',title:'Kubernetes observability',cat:'DevOps',badge:'Public lab',icon:'◉',tags:['Prometheus','Grafana','Helm'],summary:'Kubernetes monitoring lab and inspection workflows based on the kube-prometheus-stack Helm chart.',challenge:'Make infrastructure health observable before incidents become opaque.',approach:'Automated monitoring namespace and Helm setup and documented troubleshooting commands.',result:'Reproducible monitoring setup reference.',evidence:'Deployment and production alert routing have not been independently verified.',url:'https://github.com/Amor573/Monitor_Grafana-Prometheus',architecture:['Kubernetes cluster','Helm-based monitoring stack','Prometheus and ServiceMonitors','Grafana visualizations']},
+{slug:'vmware-terraform',title:'VMware infrastructure as code',cat:'Infrastructure',badge:'Reference code',icon:'▤',tags:['ESXi','vSphere','Terraform'],summary:'Terraform VM provisioning patterns for vSphere with multiple infrastructure node roles.',challenge:'Replace repeated manual VM provisioning with reviewed infrastructure definitions.',approach:'Declared virtual machines, datacenter and datastore lookups, network associations and role-based topologies.',result:'Inspectable virtualization automation design.',evidence:'Repository topology has not been revalidated as a successful live provisioning run.',url:'https://github.com/Amor573/infrastructure-setup',architecture:['vSphere / ESXi','Terraform vSphere provider','VM roles and capacity profiles','Network and datastore assignments']},
+{slug:'tcp-search',title:'Concurrent TCP search server',cat:'Network',badge:'Public code',icon:'⌁',tags:['Python','TCP/TLS','Threading'],summary:'Python TCP service built for concurrent search requests, optional TLS and benchmarking.',challenge:'Handle network search requests correctly under concurrent connections.',approach:'Implemented a configurable service and threaded handlers with transport options and benchmark utilities.',result:'Concrete Python and low-level networking proof beyond infrastructure operations.',evidence:'Do not infer published performance figures without reproducing the benchmarks.',url:'https://github.com/Amor573/Multithreaded-String-Search-Server',architecture:['TCP/TLS client connections','Threaded request handling','File-backed query processing','Testing and benchmarking']},
+{slug:'mindnan',title:'MINDNAN platform operations',cat:'Web',badge:'Private / ongoing',icon:'✳',tags:['Web hosting','DNS','Cal.com'],summary:'Product/platform operations for an evolving mental-health service, including deployment, identity and scheduling integration.',challenge:'Build consistent web-service delivery for a platform with multiple integration requirements.',approach:'Contributed infrastructure work across hosting, DNS, self-hosted scheduling and identity administration.',result:'Practical cross-functional platform work.',evidence:'Private and ongoing; no user metrics or service SLA are claimed.',url:'',architecture:['Application hosting and domain routing','DNS and HTTPS considerations','Scheduling integration','Identity and operating procedures']},
+{slug:'cargo-data',title:'Cargo revenue analytics',cat:'Data',badge:'Private case study',icon:'▦',tags:['Power BI','SQL','Reconciliation'],summary:'Revenue-assurance reporting patterns matching operational cargo data against manifests and billing records.',challenge:'Detect missing, duplicate and inconsistent operational records across systems.',approach:'Applied data cleaning and reconciliation logic to surface gaps and operational exceptions.',result:'Demonstrates data engineering and product reasoning alongside platform engineering.',evidence:'No sensitive production datasets, revenue records or client-only information are disclosed.',url:'',architecture:['Operational source records','Keyed data reconciliation','Data transformations','Reporting and exception management']},
+{slug:'enterprise-systems',title:'Enterprise infrastructure diagnostics',cat:'Infrastructure',badge:'Private experience',icon:'⌗',tags:['IBM AIX','VIOS','SAN'],summary:'Systems troubleshooting across AIX, VIOS, NPIV, Fibre Channel, storage and virtualization boundaries.',challenge:'Diagnose issues that cross operating systems, hypervisors, fabric and storage.',approach:'Used system and SAN diagnostics, I/O mapping inspection and structured operational analysis.',result:'Evidence of enterprise infrastructure troubleshooting depth.',evidence:'Operational experience is summarized without exposing customer environments, secrets or internal identifiers.',url:'',architecture:['AIX partitions and VIOS','HMC mappings and adapters','Fibre Channel connectivity','SAN storage and diagnostic logs']}
+];
+var skills=[
+['Web & product engineering','Django, Flask, Python APIs, application delivery and user journeys.'],
+['Cloud & platform engineering','AWS, Azure, Kubernetes, OpenShift, infrastructure as code.'],
+['DevOps & observability','GitHub Actions, Ansible, Docker, Helm, Prometheus and Grafana.'],
+['Networking & security','Site-to-site VPN, IKE/IPsec, DNS, routing, TLS and firewall diagnostics.'],
+['Enterprise infrastructure','Linux, AIX/VIOS, VMware, Fibre Channel, SAN and storage.'],
+['Data & product operations','Power BI, SQL, reconciliations and operational product metrics.']
+];
+var filters=['All','Web','Cloud','DevOps','Network','Infrastructure','Data'];
+function escape(s){return String(s).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]})}
+function tags(arr){return '<div class="tags">'+arr.map(function(t){return '<span class="tag">'+escape(t)+'</span>'}).join('')+'</div>'}
+function renderCards(f){
+var list=projects.filter(function(p){return f==='All'||p.cat===f||(f==='Cloud'&&p.cat==='DevOps')});
+document.getElementById('projects').innerHTML=list.map(function(p,i){return '<article class="project"><div class="phead"><span class="micro">'+String(i+1).padStart(2,'0')+' / '+escape(p.cat.toUpperCase())+'</span><span class="glyph" aria-hidden="true">'+escape(p.icon)+'</span></div><h3><a href="?case='+encodeURIComponent(p.slug)+'">'+escape(p.title)+'</a></h3><p>'+escape(p.summary)+'</p>'+tags(p.tags)+'<div class="pfooter"><span class="status '+(p.badge.indexOf('Private')>=0?'private':p.badge.indexOf('Design')>=0?'design':'')+'">'+escape(p.badge)+'</span><a class="arrow" aria-label="Read case study for '+escape(p.title)+'" href="?case='+encodeURIComponent(p.slug)+'">↗</a></div></article>'}).join('');
+document.getElementById('count').textContent=list.length+' PROJECT'+(list.length===1?'':'S');
+Array.prototype.forEach.call(document.querySelectorAll('.filter'),function(b){b.setAttribute('aria-pressed',String(b.dataset.filter===f))});
+}
+function renderCase(p){
+document.getElementById('home-view').hidden=true;
+var el=document.getElementById('case-view');el.hidden=false;
+document.title=p.title+' | Muhammed Akintola';
+el.innerHTML='<a class="back" href="./#work">← BACK TO SELECTED WORK</a><span class="index">'+escape(p.cat.toUpperCase())+' / CASE STUDY</span><h1>'+escape(p.title)+'<span style="color:var(--accent)">.</span></h1><p class="case-summary">'+escape(p.summary)+'</p><div class="case-meta"><span class="status">'+escape(p.badge)+'</span>'+tags(p.tags)+'</div><div class="case-cols"><div><section class="case-section"><span class="micro">01 / CONTEXT</span><h2>Challenge</h2><p>'+escape(p.challenge)+'</p></section><section class="case-section"><span class="micro">02 / ENGINEERING</span><h2>Approach</h2><p>'+escape(p.approach)+'</p></section><section class="case-section"><span class="micro">03 / SYSTEM VIEW</span><h2>Architecture</h2>'+p.architecture.map(function(s,i){return '<div class="case-step"><span>'+String(i+1).padStart(2,'0')+'</span><p>'+escape(s)+'</p></div>'}).join('')+'</section><section class="case-section"><span class="micro">04 / OUTCOME</span><h2>What it demonstrates</h2><p>'+escape(p.result)+'</p></section></div><aside class="proof"><span class="index">EVIDENCE NOTES</span><h3>Proof over polish.</h3><p>'+escape(p.evidence)+'</p>'+(p.url?'<a class="btn primary" href="'+escape(p.url)+'" target="_blank" rel="noopener noreferrer">Review source code ↗</a>':'<span class="micro">PRIVATE / NOT PUBLICLY LINKED</span>')+'</aside></div><a class="back" href="./#work">← ALL PROJECTS</a>';
+}
+document.getElementById('year').textContent=String(new Date().getFullYear());
+document.getElementById('filters').innerHTML=filters.map(function(f){return '<button class="filter" type="button" data-filter="'+f+'" aria-pressed="false">'+f+'</button>'}).join('');
+document.getElementById('filters').addEventListener('click',function(e){var b=e.target.closest('button[data-filter]');if(b)renderCards(b.dataset.filter)});
+document.getElementById('skill-cards').innerHTML=skills.map(function(s,i){return '<article class="skill"><span class="micro">0'+(i+1)+' / EXPERTISE</span><h3>'+escape(s[0])+'</h3><p>'+escape(s[1])+'</p></article>'}).join('');
+var selected=new URLSearchParams(location.search).get('case');
+var p=projects.find(function(x){return x.slug===selected});
+if(p){renderCase(p)}else{renderCards('All')}
+})();
+</script>
+</body>
+</html>
