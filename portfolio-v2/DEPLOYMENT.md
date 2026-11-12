@@ -26,7 +26,14 @@ The Vercel integration is an **account authorization step**, so GitHub commits a
 
 Nine curated screenshots are published in `evidence/`, with exact crops, solid redactions, captions and explicit limits. Two IBM shared-session candidates remain local and are not published. No AWS/EKS execution, AKS apply, completed VPN migration or cargo/data screenshot was selected.
 
-The Vercel connector is available but not installed/authorized in this session. No Vercel deployment status was returned for the portfolio commit. A new Vercel deployment and live verification have not been performed. Connect Vercel with access to this repository, then import it with Root Directory `portfolio-v2`.
+Published and browser-verified: https://muhammed-akintola-portfolio.vercel.app
+
+- Vercel project: `muhammed-akintola-portfolio`; root directory: `portfolio-v2`.
+- Verified deployment: `dpl_4huHFxzomftfdfgGus3CZgrUHqLh`, production, READY.
+- Verified source: `033c620ea23583da9cc5635256e6dc5eb1f96c09`.
+- Browser checks covered 320px and 390px mobile, 768px tablet and 1440px desktop widths. Fixed the case-study back-link/category collision, mobile statistics spacing and crowded tablet header.
+- All seven category filters and twelve case routes were exercised on GitHub Pages. The same source was deployed to Vercel, where desktop/tablet/mobile presentation, case navigation and all nine image loads were checked without a login prompt. No console errors were recorded.
+- These are representative browser checks, not a guarantee across every browser/device or a production service SLA.
 
 ## Security and operational rules
 
@@ -34,3 +41,4 @@ The Vercel connector is available but not installed/authorized in this session. 
 - Security-review the `tojuresto` repository before treating it as production ready. Its new `.gitignore` does not purge earlier tracked data or repository history.
 - Label CI verification separately from production deployment.
 - Keep the old GitHub Pages homepage unchanged until a verified Vercel preview is ready.
+
